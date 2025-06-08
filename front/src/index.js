@@ -11,7 +11,7 @@ ReactModal.setAppElement('#root');
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <GoogleOAuthProvider clientId="757470978448-8sp8rbnl0ffpt5rfnh3k59dokm675s91.apps.googleusercontent.com">
+    <GoogleOAuthProvider clientId="348923338054-n32k3oqrqlt6gc1am9mk4pqfo9lpc86p.apps.googleusercontent.com">
       <App />
     </GoogleOAuthProvider>
   </React.StrictMode>
