@@ -26,6 +26,7 @@ function Login() {
       setError('La contraseña debe tener al menos 6 caracteres.');
       return;
     }
+
     if (isRegister && nombre.trim().length < 2) {
       setError('Por favor, ingresa un nombre válido.');
       return;
@@ -35,9 +36,9 @@ function Login() {
 
     try {
       if (isRegister) {
-        await register({ email, clave: password, nombre });
+        await register({ email, password, nombre });
       } else {
-        await login(email, password); // ✅ Aquí se corrigió
+        await login(email, password);
       }
       window.location.reload();
     } catch (err) {
