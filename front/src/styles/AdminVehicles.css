@@ -1,0 +1,117 @@
+.cards-grid {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  height: 100%;
+}
+
+.divss{
+  width: 100%;
+}
+
+.card {
+  padding: 20px;
+  background-color: #171B24;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  cursor: pointer;
+  text-align: center;
+  font-weight: 600;
+  user-select: none;
+  transition: transform 0.2s ease;
+}
+
+.card:hover,
+.card:focus {
+  transform: scale(1.05);
+  outline: none;
+}
+
+/* Modal styles */
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.prueba{
+  display: flex;
+  justify-content: space-around;
+}
+
+.modal-content {
+  background-color: black;
+  padding: 0;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px black;
+  max-width: 470px;
+  height: auto;
+  padding-bottom: 2rem;
+}
+
+.modal-title {
+  text-transform: capitalize;
+  margin-bottom: 1em;
+}
+
+.income-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  width: 100%;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-group label {
+  margin-bottom: 0.5rem;
+  font-weight: 600;
+  font-size: 0.95rem;
+}
+
+.form-group input {
+  padding: 0.6rem 0.75rem;
+  border: none;
+  border-radius: 6px;
+  background-color: #2a2f3a;
+  color: black;
+}
+
+.form-actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 1rem;
+}
+
+.form-actions button {
+  padding: 0.6rem 1.2rem;
+  font-weight: bold;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.form-actions button[type="submit"] {
+  background-color: #007bff;
+  color: white;
+}
+
+.form-actions button[type="button"] {
+  background-color: #6c757d;
+  color: white;
+}
+
+.form-actions button:hover {
+  opacity: 0.9;
+}
