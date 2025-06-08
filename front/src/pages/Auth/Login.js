@@ -37,7 +37,7 @@ function Login() {
       if (isRegister) {
         await register({ email, clave: password, nombre });
       } else {
-        await login({ email, clave: password }); // 👈 clave en lugar de password
+        await login(email, password); // ✅ Aquí se corrigió
       }
       window.location.reload();
     } catch (err) {
